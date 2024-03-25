@@ -42,15 +42,17 @@ class _MyHomePageState extends State<MyHomePage> {
         height: double.infinity,
         width: double.infinity,
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
+          gradient: RadialGradient(
             colors: [
               Color(0xFF84fab0),
               Color(0xFF8fd3f4),
-              Colors.green,
+              //Colors.green,
             ],
-            begin: FractionalOffset(1.0, 0.0),
-            end: FractionalOffset(0.0, 1.0),
-            stops: [0.0, 0.5, 0.9],
+            //center: Alignment.topCenter,
+            radius: 3,
+            //begin: FractionalOffset(1.0, 0.0),
+            //end: FractionalOffset(0.0, 1.0),
+            stops: [0.0, 0.5],
           ),
         ),
       ),
